@@ -54,9 +54,11 @@ class ViewController: UIViewController {
                 performSegue(withIdentifier: "segue", sender: self)
             } else if sender.tag == 20 { // count
                 count += 1
+                label.text = "count"
             } else if sender.tag == 12 { // average
                 count += 1
                 sum += numberOnScreen
+                label.text = "ave"
             } else if sender.tag == 13 { // fact
                 label.text = "!"
             }
